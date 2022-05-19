@@ -64,13 +64,13 @@
             </li>
             <li class="list-group-item d-flex justify-content-between">
               <span>Total (USD)</span>
-              <span>$20</span>
+              <strong>$20</strong>
             </li>
           </ul>
 
           <form class="card p-2">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code">
+              <input type="text" class="form-control"  id="Recibir-codigo"placeholder="Promo code">
               <button type="submit" class="btn btn-secondary">Redeem</button>
             </div>
           </form>
@@ -161,14 +161,18 @@
             <hr class="my-4">
 
             <div class="form-check">
+              <fieldset>
               <input type="checkbox" class="form-check-input" id="same-address">
               <label class="form-check-label" for="same-address">Shipping address is the same as my billing
                 address</label>
+              </fieldset>
             </div>
 
             <div class="form-check">
+            <fieldset>
               <input type="checkbox" class="form-check-input" id="save-info">
               <label class="form-check-label" for="save-info">Save this information for next time</label>
+            </fieldset>
             </div>
 
             <hr class="my-4">
@@ -177,16 +181,22 @@
 
             <div class="my-3">
               <div class="form-check">
+              <fieldset>
                 <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
                 <label class="form-check-label" for="credit">Credit card</label>
+              </fieldset>
               </div>
               <div class="form-check">
+              <fieldset>
                 <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
                 <label class="form-check-label" for="debit">Debit card</label>
+              </fieldset>
               </div>
               <div class="form-check">
+              <fieldset>
                 <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
                 <label class="form-check-label" for="paypal">PayPal</label>
+              </fieldset>
               </div>
             </div>
 
